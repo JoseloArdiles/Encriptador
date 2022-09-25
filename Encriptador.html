@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Encriptador de Texto</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+
+    <body>
+        <header>
+            <div class="caja">
+                <h1> <img src="Pictures/Vector.png" alt="logo alura"> </h1>
+            </div>
+        </header>
+
+        <main>
+            <Section class="secciones">
+
+                <div class="Ingreso">
+                    <input type="text" id="inputTexto" class="input-A"  required placeholder="Ingrese el texto aqui" >
+
+                    <div class="alerta">
+                        <p >&#33 Solo minusculas y sin acentos</p>
+                    </div>
+                    
+                    <ul>
+                        <li class="button">
+        
+                           <input type="button" onclick = "Bottonencriptar()" id = "BotonE" class="ButtonA" value="Encriptar">
+                        </li>
+        
+                        <li class="button">
+                            <input type="button" onclick = "Bottondesencriptar()" class = "ButtonB" value="Desencriptar">
+                        </li>
+                    </ul>  
+
+                </div>
+
+            </Section >
+            
+            <section class="secciones">
+                <div class="resultado">
+                    <textarea class="mensaje" id="mensaje1" cols="40" rows="21.6"></textarea>
+                    <input class="copiar" onclick="copiarT()" type="button" value="Copiar">
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+
+
+    <footer>
+        <p class="copyright"> &copy Ardiles - 2022</p>
+    </footer>
+
+</html>
